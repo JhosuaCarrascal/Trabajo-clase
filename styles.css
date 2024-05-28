@@ -1,0 +1,83 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Barra de Navegación */
+.navbar {
+    background-color: #333;
+    padding: 1rem 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(243, 160, 6);
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f0f0f0;
+}
+
+/* Sección de Artículos Destacados */
+.featured-articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.article {
+    background-color: #4d1b1b;
+    border: 1px solid #a81d1d;
+    border-radius: 5px;
+    overflow: hidden;
+    width: calc(33.333% - 1rem);
+    box-shadow: 0 2px 5px rgba(0, 42, 180, 0.1);
+    transition: transform 0.3s;
+}
+
+.article img {
+    width: 100%;
+    height: auto;
+}
+
+.article h2 {
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.article:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .article {
+        width: calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .article {
+        width: 100%;
+    }
+}
